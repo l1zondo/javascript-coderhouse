@@ -105,8 +105,8 @@ img.ropa__chicos {
   width: 213px;
   height: 250px;
 }
-.ropahombre:hover,
-.ropamujer:hover,
+.ropa__hombre:hover,
+.ropa__mujer:hover,
 .ropa__chicos:hover{
   transform: scale(1.1);
   }
