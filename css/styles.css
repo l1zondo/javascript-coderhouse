@@ -42,6 +42,18 @@ header nav ul li a {
   color: white;
   font-size: 15px;
 }
+header nav ul li a:hover {
+  color: brown;
+  animation: links 2s ease-out none;
+}
+@keyframes links{
+  0%{
+    transform: translate(-30%,0);
+  }
+  25%{
+    font-size: 1.7rem;
+  }
+}
 
 @media (max-width: 550px) {
   header nav ul {
@@ -93,6 +105,12 @@ img.ropa__chicos {
   width: 213px;
   height: 250px;
 }
+.ropahombre:hover,
+.ropamujer:hover,
+.ropa__chicos:hover{
+  transform: scale(1.1);
+  }
+  
 section article table {
   border: solid 2px red;
   margin-inline: auto;
