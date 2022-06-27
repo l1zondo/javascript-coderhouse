@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoVó</title>
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="../index.html"><img class="imagenMarca" src="../img/logo.jpg" alt="logomarca" />
+      </a>
+    </nav>
+
+    <nav>
+      <ul>
+        <li class="link"><a href="hombre.html">Hombre</a></li>
+        <li class="link"><a href="mujer.html">Mujer</a></li>
+        <li class="link"><a href="chicos.html">Chicos</a></li>
+        <li class="link"><a href="contacto.html">Contacto</a></li>
+        <li class="link"><a href="galeria.html">Galeria</a></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="formulario">
+      <form>
+        <label for="campo-nombre">Nombre y apellido:</label>
+
+        <input type="text" id="campo-nombre" required />
+
+        <div>
+          <label for="campo-mail">Email:</label>
+
+          <input type="email" id="campo-mail" required />
+        </div>
+
+        <div>
+          <label for="campo-tel">Telefono:</label>
+
+          <input type="tel" id="campo-tel" required />
+        </div>
+
+        <div>
+          <label for="select-pais">Introduzca su país</label>
+
+          <select name="" id="select-pais">
+            <option value="">Argentina</option>
+            <option value="">Chile</option>
+            <option value="">Bolivia</option>
+            <option value="">Uruguay</option>
+            <option value="">Paraguay</option>
+          </select>
+        </div>
+        <label>Recibir noticias</label>
+
+        <input type="checkbox" />
+
+        <div>
+          <textarea name="" placeholder="Escriba aquí su comentario" id="" cols="20" rows="5"></textarea>
+        </div>
+
+        <input type="submit" value="enviar comentario" />
+
+        <input type="reset" value="borrar formulario" />
+      </form>
+      <hr />
+    </section>
+  </main>
+
+  <footer class="footercontenedor">
+    <div class="footercaja">
+      <h3>Productos</h3>
+      <p>Lorem ipsum dolor.</p>
+    </div>
+    <div class="footercaja2">
+      <h3>Información de la empresa</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        blanditiis veritatis.
+      </p>
+    </div>
+    <div class="footercaja3">
+      <h3>Asistencia</h3>
+      <p>Lorem ipsum dolor temporibus quisquam.</p>
+    </div>
+    <div class="footercaja4">
+      <h3 class="seguir">Seguinos</h3>
+      <img id="fotoredes" src="../img/seguinos.png" alt="redes sociales" />
+    </div>
+    <div class="footercaja5">
+      <h3>Donde encontrarnos</h3>
+      <img class="direccion" src="../img/avenida.png" alt="direccion de la sucursal" />
+    </div>
+  </footer>
+</body>
+
+</html>

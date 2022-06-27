@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(28, 16, 16);
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+header img {
+  width: 120px;
+}
+header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 5px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+}
+
+@media (max-width: 550px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+/* fin del header */
+
+/* main */
+
+@media (max-width: 550px) {
+  .banner article img {
+    width: 20rem;
+  }
+}
+@media (max-width: 550px) {
+  .banner2 article img {
+    width: 20rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.contenedor {
+  background-image: url(../img/fondodeweb.jpg);
+}
+section.banner2 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/fondopagina.png);
+}
+
+section article video.Videomarca {
+  width: 100%;
+  height: calc(50vw - 150px);
+}
+section#seccion-temporada {
+  text-align: center;
+}
+img.ropa__hombre {
+  width: 300px;
+  height: 250px;
+}
+
+img.ropa__mujer {
+  width: 250px;
+  height: 250px;
+}
+img.ropa__chicos {
+  width: 213px;
+  height: 250px;
+}
+section article table {
+  border: solid 2px red;
+  margin-inline: auto;
+}
+h2.historia {
+  text-align: center;
+}
+p.historiatexto {
+  color: blueviolet;
+  text-align: center;
+}
+aside h2.clientes {
+  color: darkslateblue;
+  text-align: end;
+}
+aside p.clientes__texto {
+  color: indianred;
+  text-align: end;
+}
+h2.video__banner {
+  text-align: center;
+  color: blue;
+  border: solid 2px black;
+  background-color: black;
+}
+
+iframe.video__local {
+  border: solid 5px red;
+  margin-left: 34%;
+  overflow: auto;
+  box-shadow: none;
+}
+
+/* fin del main */
+/* footer */
+footer {
+  margin: 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footercaja,
+.footercaja1,
+.footercaja2,
+.footercaja3,
+.footercaja4,
+.footercaja5 {
+  margin: 5px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+/* SECCION HOMBRE */
+.contenedor {
+  background-image: url(../img/fondopagina.png);
+}
+
+.footercontenedor {
+  background-image: url(../img/fondodeweb.jpg);
+}
+
+.banner {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+}
+.banner2 {
+  display: flex;
+  justify-content: center;
+}
+
+.banner2 img {
+  width: 50rem;
+}
+
+.banner2 article h2 {
+  text-align: center;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Formulario de CONTACTO */
+
+.formulario {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario label {
+  background-color: cadetblue;
+  display: flex;
+  margin: 20px 0;
+}
+section.formulario {
+  margin: 0%;
+}
+
+/* Tabla del index.html */
+
+.tabla article {
+  margin: 20px 0;
+}
+
+/* Aside Clientes */
+.clientes {
+  padding: 25px 0;
+  background-color: beige;
+  text-align: center;
+}
+/* galeria */
+
+.bannergaleria {
+  text-align: center;
+}
+
+.gridsgaleria {
+  display: flex;
+  text-align: center;
+}
+.gridsgaleria {
+  display: grid;
+  grid-template-columns: repeat(2, 1);
+  grid-row: repeat(2, 1);
+  row-gap: 50px;
+  column-gap: 40px;
+}
+
+.galeria1 {
+  width: 200px;
+  height: 250px;
+}
+.galeria2 {
+  width: 200px;
+  height: 250px;
+}
+.galeria3 {
+  width: 200px;
+  height: 250px;
+}
+.promo {
+  text-align: center;
+  font-weight: bolder;
+}
+.footercontenedorgaleria {
+  display: flex;
+  background-color: aquamarine;
+}
+
+@media (max-width: 768px) and (min-height: 1023px) {
+  main {
+    background-color: blueviolet;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: column;
+  }
+  main {
+    background-image: url(../img/fondopagina.png);
+  }
+}
+
+/* Seccion video */
+
+@media (max-width: 850px) {
+  .seccion__video {
+    display: none;
+  }
+}
+/* grids en index */
+.grids-ropa {
+  display: grid;
+  grid-template-columns: repeat(2, 1);
+  grid-row: repeat(2, 1);
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-items: center;
+}
+@media (max-width: 550px) {
+  .grids-ropa {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* grids en seccion hombre */
+@media (max-width: 550px) {
+  .gridshombres {
+    display: none;
+  }
+}
+/* grids en index */
+.gridshombres {
+  display: grid;
+  grid-template-columns: repeat(2, 1);
+  grid-row: repeat(2, 1);
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-items: center;
+}
