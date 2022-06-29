@@ -156,34 +156,8 @@ section.formulario {
   text-align: center;
 }
 /* galeria */
-
-.bannergaleria {
-  text-align: center;
-}
-
-.gridsgaleria {
+h2.titulo {
   display: flex;
-  text-align: center;
-}
-.gridsgaleria {
-  display: grid;
-  grid-template-columns: repeat(2, 1);
-  grid-row: repeat(2, 1);
-  row-gap: 50px;
-  column-gap: 40px;
-}
-
-.galeria1 {
-  width: 200px;
-  height: 250px;
-}
-.galeria2 {
-  width: 200px;
-  height: 250px;
-}
-.galeria3 {
-  width: 200px;
-  height: 250px;
 }
 .promo {
   text-align: center;
@@ -238,11 +212,3 @@ section.formulario {
   }
 }
 /* grids en index */
-.gridshombres {
-  display: grid;
-  grid-template-columns: repeat(2, 1);
-  grid-row: repeat(2, 1);
-  row-gap: 30px;
-  column-gap: 10px;
-  justify-items: center;
-}
