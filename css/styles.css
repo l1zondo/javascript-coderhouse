@@ -46,11 +46,11 @@ header nav ul li a:hover {
   color: brown;
   animation: links 2s ease-out none;
 }
-@keyframes links{
-  0%{
-    transform: translate(-30%,0);
+@keyframes links {
+  0% {
+    transform: translate(-30%, 0);
   }
-  25%{
+  25% {
     font-size: 1.7rem;
   }
 }
@@ -107,10 +107,10 @@ img.ropa__chicos {
 }
 .ropa__hombre:hover,
 .ropa__mujer:hover,
-.ropa__chicos:hover{
+.ropa__chicos:hover {
   transform: scale(1.1);
-  }
-  
+}
+
 section article table {
   border: solid 2px red;
   margin-inline: auto;
@@ -205,7 +205,7 @@ footer .footercaja,
 }
 
 .formulario label {
-  background-color: cadetblue;
+  background-color: chartreuse;
   display: flex;
   margin: 20px 0;
 }
