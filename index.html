@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <title>SoVó</title>
 </head>
@@ -14,115 +15,142 @@
 <body>
   <!-- HEADER -->
   <header>
-    <nav>
-      <ul>
-        <a href="index.html"><img class="imagenMarca" src="./img/logo.jpg" alt="logomarca" />
-        </a>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <li class="link"><a href="./pages/hombre.html">Hombre</a></li>
-        <li class="link"><a href="./pages/mujer.html">Mujer</a></li>
-        <li class="link"><a href="./pages/chicos.html">Chicos</a></li>
-        <li class="link"><a href="./pages/contacto.html">Contacto</a>
-        <li class="link"><a href="./pages/galeria.html">Galeria</a></li>
-        <li><a href="#seccion-temporada">Sección temporada</a></li>
-        </li>
-      </ul>
+    <div class="col col-12-xl">
+
+      <nav class="navbar navbar-expand-md bg-light">
+
+        <div class="row align-items-start">
+
+          <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="/img/logo.jpg" alt="imagenlogo" class="w-50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <ul>
+                      <li>
+                        <a class="nav-link" aria-current="page" href="./pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./pages/mujer.html">Mujer</a>
+                        <a class="nav-link" href="./pages/hombre.html">Hombre</a>
+                        <a class="nav-link" href="/video/publicidad.mp4">Video de nuestra mercaderia</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
     </nav>
   </header>
   <!-- FIN DEL HEADER -->
 
   <!-- MAIN -->
   <main class="contenedor">
-    <section class="banner2">
-      <article>
-        <video class="Videomarca" src="./video/publicidad.mp4" controls></video>
-      </article>
-      <hr />
+    <div class="row">
+      <section class="banner2">
+        <article>
+          <video class="Videomarca" src="./video/publicidad.mp4" controls></video>
+        </article>
+    </div>
     </section>
-    <section id="seccion-temporada">
-      <article class="grids-ropa">
-        <h2 class="banner">TEMPORADA 2022</h2>
-        <img class="ropa__hombre" src="./img/ropa-hombre.jpg" alt="ropa de hombre" />
-        <img class="ropa__mujer" src="./img/ropa-mujer.jpg" alt="ropa de mujer" />
-        <img class="ropa__chicos" src="./img/ropa-chicos.jpg" alt="ropa de chicos" />
-      </article>
+    <div class="container-row">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/ropa-hombre.jpg" class="d-block w-100" alt="ropadehombre" height="1000px">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ropa-chicos.jpg" class="d-block w-100" alt="ropadechicos" height="1000px">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ropa-mujer.jpg" class="d-block w-100" alt="ropademujer" height="1000px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    </article>
     </section>
-
-    <section class="tabla">
-      <article>
-        <table border="1">
-          <caption>
-            Nuestra indumentaria del 2022
-          </caption>
-          <thead>
-            <tr>
-              <th>Producto</th>
-              <th>Precio</th>
-              <th>Talles</th>
-              <th>Unisex?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Zapatillas para Adultos</td>
-              <td>8000$</td>
-              <td>34 al 44</td>
-              <td>Si</td>
-            </tr>
-
-            <tr>
-              <td>Remera para adultos</td>
-              <td>2000$</td>
-              <td>XS al XL</td>
-              <td>Si</td>
-            </tr>
-
-            <tr>
-              <td>Pantalón para adultos o chicos</td>
-              <td>5000$</td>
-              <td>34 al 46</td>
-              <td>Si</td>
-            </tr>
-            <tr>
-              <td>Zapatillas para niños</td>
-              <td>4500$</td>
-              <td>26 al 34</td>
-              <td>Si</td>
-            </tr>
-            <tr>
-              <td>Remera para niños</td>
-              <td>1000$</td>
-              <td>2 al 16</td>
-              <td>Si</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <hr />
-    </section>
-
     <section>
-      <article class="clientes">
+      <article>
         <h2 class="historia">Historia</h2>
-        <p class="historiatexto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi soluta
-          fuga, <strong> fugiat, enim, dolorum provident sed </strong>tenetur
-          consequuntur dolores officiis neque nulla sequi culpa distinctio
-          nihil quaerat iusto natus excepturi?
-        </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ab architecto animi ducimus numquam
+                exercitationem ea expedita cumque magnam, maiores laudantium soluta suscipit nisi beatae nobis!
+                Explicabo repellendus recusandae maiores!
+              </button>
+            </h2>
+          </div>
+          </p>
       </article>
     </section>
-    <hr />
 
-    <aside class="clientes">
-      <h2>Clientes</h2>
-      <p>Aspernatur, recusandae assumenda!</p>
-      <p>magnam nemo corporis. Autem?</p>
-      <p>ut deleniti quae voluptatibus!</p>
-    </aside>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Cliente 1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">La mejor ropa sin duda!</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Cliente 2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Muy buena atención al cliente!</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Cliente 3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Volveria a comprar sin duda alguna!</div>
+        </div>
+      </div>
+    </div>
     <hr />
     <section class="seccion__video">
       <article>
@@ -140,31 +168,37 @@
   <!-- FOOTER -->
 
   <footer class="footercontenedor">
-    <div class="footercaja">
-      <h3>Productos</h3>
-      <p>Lorem ipsum dolor.</p>
-    </div>
-    <div class="footercaja2">
-      <h3>Información de la empresa</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        blanditiis veritatis.
-      </p>
-    </div>
-    <div class="footercaja3">
-      <h3>Asistencia</h3>
-      <p>Lorem ipsum dolor temporibus quisquam.</p>
-    </div>
-    <div class="footercaja4">
-      <h3 class="seguir">Seguinos</h3>
-      <img id="fotoredes" src="./img/seguinos.png" alt="redes sociales" />
-    </div>
-    <div class="footercaja5">
-      <h3>Donde encontrarnos</h3>
-      <img class="direccion" src="./img/avenida.png" alt="direccion de la sucursal" />
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col">
+          <h3>Productos</h3>
+          <p>Lorem ipsum dolor.</p>
+        </div>
+        <div class="col">
+          <h3>Información de la empresa</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            blanditiis veritatis.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Asistencia</h3>
+          <p>Lorem ipsum dolor temporibus quisquam.</p>
+        </div>
+        <div class="col">
+          <h3 class="seguir">Seguinos</h3>
+          <img id="fotoredes" src="./img/seguinos.png" alt="redes sociales" />
+        </div>
+        <div class="col">
+          <h3>Donde encontrarnos</h3>
+          <img class="direccion" src="./img/avenida.png" alt="direccion de la sucursal" />
+        </div>
+      </div>
     </div>
   </footer>
-
+  <script src="./js/bootstrap.js"></script>
   <!--FIN DEL FOOTER -->
 </body>
 
