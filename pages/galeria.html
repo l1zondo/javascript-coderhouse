@@ -5,33 +5,85 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <title>Sovó</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="../index.html"><img class="imagenMarca" src="../img/logo.jpg" alt="logomarca" />
-      </a>
-    </nav>
+    <div class="col col-12-xl">
 
-    <nav>
-      <ul>
-        <li class="link"><a href="hombre.html">Hombre</a></li>
-        <li class="link"><a href="mujer.html">Mujer</a></li>
-        <li class="link"><a href="chicos.html">Chicos</a></li>
-        <li class="link"><a href="contacto.html">Contacto</a></li>
-      </ul>
+      <nav class="navbar navbar-expand-md bg-light">
+
+        <div class="row align-items-start">
+
+          <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="/img/logo.jpg" alt="imagenlogo" class="w-50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <ul>
+                      <li>
+                        <a class="nav-link" aria-current="page" href="../pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/mujer.html">Mujer</a>
+                        <a class="nav-link" href="../pages/hombre.html">Hombre</a>
+                        <a class="nav-link" href="../pages/chicos.html">Chicos</a>
+                        <a class="nav-link" href="/video/publicidad.mp4">Video de nuestra mercaderia</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
   </header>
-  <main>
-    <h2 class="bannergaleria">Nuestros ultimos articulos!</h2>
-    <section class="gridsgaleria">
+  <main class="container-fluid">
+    <h2 class="titulo" >Nuestros ultimos articulos!</h2>
+    <section class=row>
       <article>
-        <img class="galeria1" src="../img/ropa-hombre.jpg" alt="ropa de hombre">
-        <img class="galeria2" src="../img/ropa-mujer.jpg" alt="ropa de mujer">
-        <img class="galeria3" src="../img/ropa-chicos.jpg" alt="ropa de chicos">
-      </article>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/ropa-chicos.jpg" class="d-block w-100" alt="ropachicos" height="1000px"> 
+            </div>
+            <div class="carousel-item">
+              <img src="../img/ropa-hombre.jpg" class="d-block w-100" alt="ropa-hombre"height="1000px">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/ropa-mujer.jpg" class="d-block w-100" alt="ropamujer"height="1000px"> 
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
     </section>
 
     <section>
@@ -42,32 +94,38 @@
 
   </main>
 
-  <footer class="footercontenedorgaleria">
-    <div class="footercaja">
-      <h3>Productos</h3>
-      <p>Lorem ipsum dolor.</p>
-    </div>
-    <div class="footercaja2">
-      <h3>Información de la empresa</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        blanditiis veritatis.
-      </p>
-    </div>
-    <div class="footercaja3">
-      <h3>Asistencia</h3>
-      <p>Lorem ipsum dolor temporibus quisquam.</p>
-    </div>
-    <div class="footercaja4">
-      <h3 class="seguir">Seguinos</h3>
-      <img id="fotoredes" src="../img/seguinos.png" alt="redes sociales" />
-    </div>
-    <div class="footercaja5">
-      <h3>Donde encontrarnos</h3>
-      <img class="direccion" src="../img/avenida.png" alt="direccion de la sucursal" />
+  <footer class="footercontenedor">
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col">
+          <h3>Productos</h3>
+          <p>Lorem ipsum dolor.</p>
+        </div>
+        <div class="col">
+          <h3>Información de la empresa</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            blanditiis veritatis.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Asistencia</h3>
+          <p>Lorem ipsum dolor temporibus quisquam.</p>
+        </div>
+        <div class="col">
+          <h3 class="seguir">Seguinos</h3>
+          <img id="fotoredes" src="./img/seguinos.png" alt="redes sociales" />
+        </div>
+        <div class="col">
+          <h3>Donde encontrarnos</h3>
+          <img class="direccion" src="./img/avenida.png" alt="direccion de la sucursal" />
+        </div>
+      </div>
     </div>
   </footer>
-
+  <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
