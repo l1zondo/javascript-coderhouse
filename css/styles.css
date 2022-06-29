@@ -12,7 +12,6 @@ html {
 /* Header */
 header nav ul li {
   margin: 1px;
-  text-decoration: none;
 }
 header nav ul li a:hover {
   animation: links 2s ease-out none;
