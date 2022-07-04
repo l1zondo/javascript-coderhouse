@@ -149,18 +149,6 @@ section.formulario {
   margin: 0%;
 }
 
-/* Tabla del index.html */
-
-.tabla article {
-  margin: 20px 0;
-}
-
-/* Aside Clientes */
-.clientes {
-  padding: 25px 0;
-  background-color: beige;
-  text-align: center;
-}
 /* galeria */
 h2.titulo {
   display: flex;
@@ -172,12 +160,6 @@ h2.titulo {
 .footercontenedorgaleria {
   display: flex;
   background-color: aquamarine;
-}
-
-@media (max-width: 768px) and (min-height: 1023px) {
-  main {
-    background-color: blueviolet;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -196,15 +178,6 @@ h2.titulo {
     display: none;
   }
 }
-/* grids en index */
-.grids-ropa {
-  display: grid;
-  grid-template-columns: repeat(2, 1);
-  grid-row: repeat(2, 1);
-  row-gap: 30px;
-  column-gap: 10px;
-  justify-items: center;
-}
 @media (max-width: 550px) {
   .grids-ropa {
     display: flex;
@@ -219,6 +192,3 @@ h2.titulo {
 }
 /* grids en index */
 /* seccion chicos */
-.chicosimagen {
-  display: flex;
-}
