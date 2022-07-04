@@ -14,7 +14,9 @@ header nav ul li a {
   text-decoration: none;
   margin: 5px;
 }
-
+.colorNav:hover {
+  color: red;
+}
 li {
   list-style-type: none;
 }
