@@ -10,9 +10,13 @@ html {
 }
 
 /* Header */
-header nav ul li {
-  margin: 1px;
+header nav ul li a {
   text-decoration: none;
+  margin: 5px;
+}
+
+li {
+  list-style-type: none;
 }
 header nav ul li a:hover {
   animation: links 2s ease-out none;
@@ -54,18 +58,19 @@ header nav ul li a:hover {
 section.banner2 {
   display: flex;
   margin: auto;
+  width: auto;
   background-image: url(../img/fondopagina.png);
+}
+.videomarca {
+  display: flex;
+  margin: auto;
 }
 section#seccion-temporada {
   text-align: center;
 }
-
-.ropa__hombre:hover,
-.ropa__mujer:hover,
-.ropa__chicos:hover {
-  transform: scale(1.1);
+.carousel-inner img {
+  object-fit: unset;
 }
-
 section article table {
   border: solid 2px red;
   margin-inline: auto;
@@ -213,3 +218,7 @@ h2.titulo {
   }
 }
 /* grids en index */
+/* seccion chicos */
+.chicosimagen {
+  display: flex;
+}
