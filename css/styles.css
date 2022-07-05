@@ -63,9 +63,9 @@ section.banner2 {
   width: auto;
   background-image: url(../img/fondopagina.png);
 }
-.videomarca {
+.VideoMarca {
   display: flex;
-  margin: auto;
+  width: 100%;
 }
 section#seccion-temporada {
   text-align: center;
@@ -79,6 +79,8 @@ section article table {
 }
 h2.historia {
   text-align: center;
+  background: linear-gradient(black, red);
+  color: antiquewhite;
 }
 p.historiatexto {
   color: blueviolet;
@@ -90,8 +92,8 @@ aside h2.clientes {
 }
 h2.video__banner {
   text-align: center;
-  color: black;
-  background-color: white;
+  color: antiquewhite;
+  background: linear-gradient(black, red);
 }
 
 iframe.video__local {
@@ -103,14 +105,44 @@ iframe.video__local {
 
 /* fin del main */
 /* footer */
+.footercontenedor {
+  background-image: url(../img/fondodeweb.jpg);
+}
+.direccion {
+  display: flex;
+  width: 100%;
+}
 
+.textoFooter {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.textoFooter:hover {
+  animation: links 2s ease-out none;
+}
+@keyframes links {
+  0% {
+    transform: translate(-2%, 0);
+  }
+  25% {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+
+#fotoredes {
+  display: flex;
+  width: 100px;
+}
 /* SECCION HOMBRE */
 .contenedor {
   background-image: url(../img/fondopagina.png);
-}
-
-.footercontenedor {
-  background-image: url(../img/fondodeweb.jpg);
 }
 
 .banner {
@@ -152,16 +184,14 @@ section.formulario {
 }
 
 /* galeria */
-h2.titulo {
-  display: flex;
+.titulogaleria {
+  text-align: center;
+  color: antiquewhite;
 }
 .promo {
   text-align: center;
   font-weight: bolder;
-}
-.footercontenedorgaleria {
   display: flex;
-  background-color: aquamarine;
 }
 
 @media (min-width: 1024px) {
