@@ -47,7 +47,7 @@ img.carousel-inner {
   }
 }
 .contenedor {
-  background-image: url(../img/fondodeweb.jpg);
+  background-image: url(../../img/fondodeweb.jpg);
 }
 
 section.banner2 {
@@ -55,7 +55,7 @@ section.banner2 {
   margin: auto;
   width: auto;
   justify-content: center;
-  background-image: url(../img/fondopagina.png);
+  background-image: url(../../img/fondopagina.png);
 }
 
 .VideoMarca {
