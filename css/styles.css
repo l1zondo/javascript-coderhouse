@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -10,16 +11,18 @@ html {
 }
 
 /* Header */
-header nav ul li a {
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul a {
   text-decoration: none;
   margin: 5px;
 }
+
 .colorNav:hover {
   color: red;
 }
-li {
-  list-style-type: none;
-}
+
 header nav ul li a:hover {
   animation: links 2s ease-out none;
 }
@@ -32,21 +35,10 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-width: 550px) {
-  header nav ul {
-    flex-direction: column;
-  }
+img.carousel-inner {
+  object-fit: unset;
 }
 
-/* fin del header */
-
-/* main */
-
-@media (max-width: 550px) {
-  .banner article img {
-    width: 20rem;
-  }
-}
 @media (max-width: 550px) {
   .banner2 article img {
     width: 20rem;
@@ -57,39 +49,26 @@ header nav ul li a:hover {
 .contenedor {
   background-image: url(../img/fondodeweb.jpg);
 }
+
 section.banner2 {
   display: flex;
   margin: auto;
   width: auto;
+  justify-content: center;
   background-image: url(../img/fondopagina.png);
 }
+
 .VideoMarca {
   display: flex;
   width: 100%;
 }
-section#seccion-temporada {
-  text-align: center;
-}
-.carousel-inner img {
-  object-fit: unset;
-}
-section article table {
-  border: solid 2px red;
-  margin-inline: auto;
-}
+
 h2.historia {
   text-align: center;
   background: linear-gradient(black, red);
   color: antiquewhite;
 }
-p.historiatexto {
-  color: blueviolet;
-  text-align: center;
-}
-aside h2.clientes {
-  color: darkslateblue;
-  text-align: end;
-}
+
 h2.video__banner {
   text-align: center;
   color: antiquewhite;
@@ -103,11 +82,19 @@ iframe.video__local {
   box-shadow: none;
 }
 
-/* fin del main */
-/* footer */
-.footercontenedor {
-  background-image: url(../img/fondodeweb.jpg);
+@media (max-width: 850px) {
+  .seccion__video {
+    display: none;
+  }
 }
+.seccion__video {
+  background-image: url(../../img/fondopagina.png);
+}
+
+.footercontenedor {
+  background-image: url(../../img/fondodeweb.jpg);
+}
+
 .direccion {
   display: flex;
   width: 100%;
@@ -130,97 +117,9 @@ iframe.video__local {
   }
 }
 
-@media (max-width: 550px) {
-  header nav ul {
-    flex-direction: column;
-  }
-}
-
 #fotoredes {
   display: flex;
   width: 100px;
 }
-/* SECCION HOMBRE */
-.contenedor {
-  background-image: url(../img/fondopagina.png);
-}
 
-.banner {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  margin: 0%;
-}
-.banner2 {
-  display: flex;
-  justify-content: center;
-}
-
-.banner2 img {
-  width: 50rem;
-}
-
-.banner2 article h2 {
-  text-align: center;
-  margin: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-/* Formulario de CONTACTO */
-
-.formulario {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.formulario label {
-  background-color: green;
-  display: flex;
-  margin: 20px 0;
-}
-section.formulario {
-  margin: 0%;
-}
-
-/* galeria */
-.titulogaleria {
-  text-align: center;
-  color: antiquewhite;
-}
-.promo {
-  text-align: center;
-  font-weight: bolder;
-  display: flex;
-}
-
-@media (min-width: 1024px) {
-  footer {
-    flex-direction: column;
-  }
-  main {
-    background-image: url(../img/fondopagina.png);
-  }
-}
-
-/* Seccion video */
-
-@media (max-width: 850px) {
-  .seccion__video {
-    display: none;
-  }
-}
-@media (max-width: 550px) {
-  .grids-ropa {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-/* grids en seccion hombre */
-@media (max-width: 550px) {
-  .gridshombres {
-    display: none;
-  }
-}
-/* grids en index */
-/* seccion chicos */
+/*# sourceMappingURL=styles.css.map */
