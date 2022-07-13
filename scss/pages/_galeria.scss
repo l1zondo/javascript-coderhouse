@@ -1,0 +1,21 @@
+.titulogaleria {
+    text-align: center;
+    color: antiquewhite;
+  }
+  .promo {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+  }
+  
+  @media (min-width: 1024px) {
+    footer {
+      flex-direction: column;
+    }
+    main {
+      background-image: url(../img/fondopagina.png);
+    }
+  }
+  .contenedor {
+    background-image: url(../img/fondopagina.png);
+  }

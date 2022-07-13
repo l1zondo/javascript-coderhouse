@@ -35,8 +35,59 @@ header nav ul li a:hover {
   }
 }
 
+.contenedor {
+  background-image: url(../img/fondodeweb.jpg);
+}
+
 img.carousel-inner {
   object-fit: unset;
+}
+
+.footercontenedor {
+  background-image: url(../img/fondodeweb.jpg);
+}
+
+.direccion {
+  display: flex;
+  width: 100%;
+}
+
+.textoFooter {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.textoFooter:hover {
+  animation: links 2s ease-out none;
+}
+@keyframes links {
+  0% {
+    transform: translate(-2%, 0);
+  }
+  25% {
+    font-size: 1.5rem;
+  }
+}
+
+#fotoredes {
+  display: flex;
+  width: 100px;
+}
+
+.banner {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+}
+
+.banner2 {
+  display: flex;
+  justify-content: center;
+}
+
+.banner2 img {
+  width: 50rem;
 }
 
 @media (max-width: 550px) {
@@ -91,35 +142,55 @@ iframe.video__local {
   background-image: url(../img/fondopagina.png);
 }
 
-.footercontenedor {
+.formulario {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario label {
+  background-color: green;
+  display: flex;
+  margin: 20px 0;
+}
+
+section.formulario {
+  margin: 0%;
+}
+
+.contenedor {
   background-image: url(../img/fondodeweb.jpg);
 }
 
-.direccion {
-  display: flex;
-  width: 100%;
+.titulogaleria {
+  text-align: center;
+  color: antiquewhite;
 }
 
-.textoFooter {
-  color: red;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.textoFooter:hover {
-  animation: links 2s ease-out none;
-}
-@keyframes links {
-  0% {
-    transform: translate(-2%, 0);
-  }
-  25% {
-    font-size: 1.5rem;
-  }
+.promo {
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
 }
 
-#fotoredes {
-  display: flex;
-  width: 100px;
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: column;
+  }
+  main {
+    background-image: url(../img/fondopagina.png);
+  }
+}
+.contenedor {
+  background-image: url(../img/fondopagina.png);
+}
+
+.contenedor {
+  background-image: url(../img/fondopagina.png);
+}
+
+.contenedor {
+  background-image: url(../img/fondopagina.png);
 }
 
 /*# sourceMappingURL=styles.css.map */
