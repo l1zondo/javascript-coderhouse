@@ -1,3 +1,29 @@
+.historia--texto {
+  color: antiquewhite;
+}
+
+.historia--texto {
+  color: antiquewhite;
+}
+
+h2.historia, h2.historia-inactiva {
+  text-align: center;
+  background: linear-gradient(black, red);
+  color: antiquewhite;
+}
+
+.historia-inactiva {
+  text-shadow: none;
+  text-overflow: ellipsis;
+}
+
+.historia, .historia-inactiva {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +140,7 @@ section.banner2 {
   width: 100%;
 }
 
-h2.historia {
+h2.historia, h2.historia-inactiva {
   text-align: center;
   background: linear-gradient(black, red);
   color: antiquewhite;
@@ -180,17 +206,6 @@ section.formulario {
   main {
     background-image: url(../img/fondopagina.png);
   }
-}
-.contenedor {
-  background-image: url(../img/fondopagina.png);
-}
-
-.contenedor {
-  background-image: url(../img/fondopagina.png);
-}
-
-.contenedor {
-  background-image: url(../img/fondopagina.png);
 }
 
 /*# sourceMappingURL=styles.css.map */
