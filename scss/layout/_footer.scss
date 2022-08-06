@@ -26,4 +26,22 @@
     display: flex;
     width: 100px;
   }
-  
+  .mapaLocal{
+    display: flex;
+    }
+         .mapaIframe{
+         width: 25rem;
+         height: 10rem;
+  }
+  .footerGrid{
+display: grid;
+grid-template-rows:5rem;
+  }
+  .iconoFacebook{
+    width: 2rem;
+    height: 2rem;
+  }
+  .iconoInstagram{
+    width: 2rem;
+    height: 2rem;
+  }
