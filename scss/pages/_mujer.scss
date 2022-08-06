@@ -1,7 +1,13 @@
-.banner2{
+.bannerMujer{
     display: flex;
-
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
 }
 .tituloMujer{
-    display: flex;
+    text-align: center;
+    color: antiquewhite;
+    padding: 25px;
 }
+
