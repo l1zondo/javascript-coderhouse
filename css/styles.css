@@ -100,20 +100,33 @@ img.carousel-inner {
   width: 100px;
 }
 
-.banner {
-  margin: 20px 0;
+.card {
   display: flex;
-  justify-content: center;
-  margin: 0%;
+  text-align: center;
 }
 
-.banner2 {
+.contenedorJean {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding: 20px 20px;
 }
 
-.banner2 img {
-  width: 50rem;
+.contenedorCamisa {
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+.contenedorRemera {
+  display: flex;
+  justify-content: end;
+  padding: 50px;
+}
+
+.tituloHombre {
+  display: flex;
+  text-align: center;
+  color: antiquewhite;
 }
 
 @media (max-width: 550px) {
@@ -144,11 +157,13 @@ h2.historia, h2.historia-inactiva {
   text-align: center;
   background: linear-gradient(black, red);
   color: antiquewhite;
+  padding: 10px;
 }
 
 h2.video__banner {
   text-align: center;
   color: antiquewhite;
+  padding: 10px;
   background: linear-gradient(black, red);
 }
 
@@ -172,6 +187,7 @@ iframe.video__local {
   margin: 20px;
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 
 .formulario label {
@@ -188,7 +204,25 @@ section.formulario {
   background-image: url(../img/fondodeweb.jpg);
 }
 
-.titulogaleria {
+.tituloContacto {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+.textoContacto {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  color: red;
+  font-size: larger;
+  font-weight: 400;
+  background-color: antiquewhite;
+}
+
+.tituloGaleria {
   text-align: center;
   color: antiquewhite;
 }
@@ -200,12 +234,55 @@ section.formulario {
 }
 
 @media (min-width: 1024px) {
-  footer {
-    flex-direction: column;
-  }
   main {
     background-image: url(../img/fondopagina.png);
   }
+}
+.bannerMujer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.tituloMujer {
+  text-align: center;
+  color: antiquewhite;
+  padding: 25px;
+}
+
+.chicosSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.mickeyGcard {
+  padding: 50px;
+}
+
+.textoMickeyGris,
+.textoMickeyBlanca,
+.textoNoLimit {
+  text-decoration: line-through;
+}
+
+.mickeyBcard {
+  padding: 50px;
+}
+
+.noLimitCard {
+  padding: 50px;
+}
+
+h1.tituloChicos {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
