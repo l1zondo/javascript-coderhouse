@@ -100,6 +100,30 @@ img.carousel-inner {
   width: 100px;
 }
 
+.mapaLocal {
+  display: flex;
+}
+
+.mapaIframe {
+  width: 25rem;
+  height: 10rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-rows: 5rem;
+}
+
+.iconoFacebook {
+  width: 2rem;
+  height: 2rem;
+}
+
+.iconoInstagram {
+  width: 2rem;
+  height: 2rem;
+}
+
 .card {
   display: flex;
   text-align: center;
@@ -250,6 +274,18 @@ section.formulario {
   text-align: center;
   color: antiquewhite;
   padding: 25px;
+}
+
+.remeraMujer {
+  padding: 20px;
+}
+
+.conjuntoMujer {
+  padding: 20px;
+}
+
+.buzoMujer {
+  padding: 20px;
 }
 
 .chicosSection {
