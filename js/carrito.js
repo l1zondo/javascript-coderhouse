@@ -1,31 +1,37 @@
-// let nota=parseInt(prompt("Ingresa tu nota (-1 para salir)"));
-// let sumaNotas=0;
-// let cantidadNotas=0;
-// while(nota!=-1){
-//     sumaNotas=sumaNotas+nota;
-//     cantidadNotas=cantidadNotas+1;
-//     nota=parseInt(prompt("Ingresa tu nota (-1 para salir)"));
-// }
-// let promedio=sumaNotas/cantidadNotas;
-// console.log("El promedio de las notas es: "+promedio);
-
-
 const ropa=[
     {
         id:"camisa1",
-        titulo:"camisa vaquita",
+         titulo:"camisa vaquita",
         precio:4500
-    },
+     },
 
-    {
-        id:"jean1",
+     {
+         id:"jean1",
         titulo:"jean elastizado azul",
-        precio:5000
-    },
+         precio:5000
+     },
     {
         id:"remera1",
-        titulo:"remera emoji",
-        precio:2500
-    }
-]
-console.log(ropa)
+         titulo:"remera emoji",
+         precio:2500
+     }
+ ]
+ console.log(ropa)
+
+function calcularIva(precio){
+    let precioConIva=precio * 1.21;
+    return precioConIva;
+}
+
+let conIva=calcularIva(100);
+console.log("El valor del iva es $"+conIva);
+
+function aplicarDescuento(precio){
+    return precio * 0.9;
+}
+let precioConAumento=aplicarDescuento(calcularIva(parseInt(prompt("Ingrese los valores de lo que quiere comprar"))))
+console.log(precioConAumento);
+
+ 
+
+
