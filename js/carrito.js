@@ -1,34 +1,46 @@
 console.dir(document.body)
-const productos=[{id: 1, titulo:"camisa vaquita", precio:4500},
-{id: 2, titulo:"jean elastizado azul", precio:5000},
-{id: 3, titulo:"remera emoji", precio:2500}];
+
+const productos=[{id: 1, titulo:"camisa vaquita", precio:4500,imagen:"../img/camisa-vaquita.jpg"},
+
+{id: 2, titulo:"jean elastizado azul", precio:5000, imagen:"../img/Jean-hombre.jpg"},
+
+{id: 3, titulo:"remera emoji", precio:2500, imagen:"../img/remera-mujer.jpg"},
+
+{id: 4, titulo:"remera mickey mouse", precio:2500 ,imagen:"../img/mickey-chicos.jpg"},
+];
  console.log(productos)
-function calcularIva(precio){
-    let precioConIva=precio * 1.21;
-    return precioConIva;
-}
 
-let conIva=calcularIva(100);
-console.log("El valor del iva es $"+conIva);
-
-function aplicarDescuento(precio){
-    return precio * 0.9;
-}
-let precioConAumento=aplicarDescuento(calcularIva(parseInt(prompt("Ingrese los valores de lo que quiere comprar"))))
-console.log(precioConAumento);
-
-
-let cartas=document.getElementById("cartas");
+ let cartas=document.getElementById("cartas");
 for(const producto of productos){
     let carta=document.createElement("div");
-    carta.className="card col-md-6";
+    carta.className="card col-md-2";
     carta.innerHTML=`
     <div class="card-body">
+    <img class="card-img-top"src="${producto.imagen}"alt="imagen de jean">
           <h5 class="card-title">${producto.titulo}</h5>
-          <p class="card-text">${producto.precio}</p>
-          <button class="btn btn-primary">COMPRAR</button>
-        </div>
-    
-    `;
-    cartas.append(carta);
+          <p class="card-text">${producto.precio}</p>     
+          <a href="#" class="btn btn-primary id="">COMPRAR</a>
+        </div>`;
+
+        cartas.append(carta);
+}
+let boton = document.getElementById([producto.id]) 
+ document.getElementById("boton"), boton.addEventListener("click",() => {
+ console.log ("agregaste al carrito")
+ miCarrito.push (producto);
+ });
+
+
+
+
+productos.forEach(producto) 
+document.getElementById(btn$[boton.id]).addEventListener("click", function(){
+
+    agregarAlCarrito(producto)
+});
+function agregarAlCarrito(service){
+    miCarrito.push(service);
+    console.log(miCarrito);
+    alert("Producto: "+service.servicio+" agregado al carrito")
+    document.getElementById("tableBody").innerHTML
 }
